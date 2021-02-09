@@ -22,7 +22,7 @@ mvn spring-boot:run
 
 #### Query
 
-Use postman or [graphiql](https://www.electronjs.org/apps/graphiql) to post the query
+Use postman or [graphiql](https://www.electronjs.org/apps/graphiql) to post a query
 
 ``` graphql
 {
