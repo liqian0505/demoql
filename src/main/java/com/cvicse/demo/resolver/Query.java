@@ -14,11 +14,11 @@ public class Query implements GraphQLQueryResolver {
     @Autowired
     private ContractRepository contractRepository;
 
-    public Iterable<Client> findAllClients() {
+    public Iterable<Client> allClients() {
         return clientRepository.findAll();
     }
 
-    public Iterable<Contract> findAllContracts() {
+    public Iterable<Contract> allContracts() {
         return contractRepository.findAll();
     }
 }

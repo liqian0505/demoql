@@ -4,7 +4,7 @@ type Client {
     clientId: String!
 }
 
-type Query {
-    findAllClients: [Client]!
+extend type Query {
+    allClients: [Client]!
 }
 

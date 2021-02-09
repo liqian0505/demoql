@@ -1,0 +1,13 @@
+type Risk {
+    id: String!
+    contractId: String!
+    year: String!
+    month: String!
+    date: String!
+    level: String!
+}
+
+# extend type Query {
+#     risks: [Risk]!
+# }
+

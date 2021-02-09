@@ -26,10 +26,14 @@ Use postman or [graphiql](https://www.electronjs.org/apps/graphiql) to post a qu
 
 ``` graphql
 {
-  findAllContracts{
+  allContracts{
     contractId
     client{
       clientName
+    }
+    latestRisk {
+      level
+      date
     }
   }
 }
