@@ -1,0 +1,10 @@
+type Client {
+    id: String!
+    clientName: String!
+    clientId: String!
+}
+
+type Query {
+    findAllClients: [Client]!
+}
+

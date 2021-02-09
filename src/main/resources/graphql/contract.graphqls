@@ -1,0 +1,9 @@
+type Contract {
+    id: String!
+    contractId: String!
+    client: Client
+}
+
+extend type Query {
+    findAllContracts: [Contract]!
+}

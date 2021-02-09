@@ -10,19 +10,18 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Entity
-@Table(name = "CONTRACT")
+@Table(name = "CLIENT")
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Contract {
+public class Client {
     @Id
     @Column(name = "id", nullable = false)
     private String id;
 
-    @Column(name = "合同编号", nullable = false)
-    private String contractId;
-
     @Column(name = "客户编号", nullable = false)
     private String clientId;
 
+    @Column(name = "客户名称", nullable = false)
+    private String clientName;
 }

@@ -158,6 +158,7 @@ buildNumber.properties
 .mvn/wrapper/maven-wrapper.jar
 
 ### vscode ###
+.vscode/
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
@@ -255,5 +256,5 @@ local.properties
 ### Eclipse Patch ###
 # Spring Boot Tooling
 .sts4-cache/
-
+.classpath
 # End of https://www.toptal.com/developers/gitignore/api/eclipse
