@@ -1,0 +1,13 @@
+type Balance {
+    id: String!
+    contractId: String!
+    corpId: String!
+    corpName: String!
+    year: String!
+    month: String!
+    ledgerId: String!
+    ledgerName: String!
+    subjectId: String!    
+    subjectName: String!
+    balance: String!
+}
