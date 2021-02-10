@@ -5,9 +5,11 @@ type Risk {
     month: String!
     date: String!
     level: String!
+    # contract: Contract!
 }
 
 # extend type Query {
 #     risks: [Risk]!
+#     riskOfLevel(level: String): [Risk]!
 # }
 
