@@ -1,5 +1,7 @@
 package com.cvicse.demo.resolver;
 
+import java.util.Optional;
+
 import com.coxautodev.graphql.tools.GraphQLQueryResolver;
 import com.cvicse.demo.model.Client;
 import com.cvicse.demo.model.Contract;
@@ -26,7 +28,11 @@ public class Query implements GraphQLQueryResolver {
         return contractRepository.findAll();
     }
 
-    public Iterable<Risk> latestRisks(){
-        return riskRepository.findLastestRisks();
+    public Iterable<Risk> latestRisks(String level){
+        return riskRepository.findLastestRisks(level);
+    }
+
+    public Optional<Contract> contract(String contractId){
+        return contractRepository.findByContractId(contractId);
     }
 }

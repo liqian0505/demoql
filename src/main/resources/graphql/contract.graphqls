@@ -9,4 +9,5 @@ type Contract {
 
 type Query {
     allContracts: [Contract]!
+    contract(id: String): Contract
 }
