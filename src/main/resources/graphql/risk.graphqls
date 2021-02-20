@@ -9,6 +9,6 @@ type Risk {
 }
 
 extend type Query {
-    latestRisks: [Risk]!
+    latestRisks(level: String): [Risk]!
 }
 
